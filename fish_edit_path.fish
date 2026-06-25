@@ -227,7 +227,7 @@ function __confirm
   set -l answer (
     printf "%s\n" Apply Cancel |
     fzf \
-      --preview "bat $tmp_preview" \
+      --preview "cat $tmp_preview" \
       --preview-label "Preview of the changes (diff)" \
       --header "Apply the changes?" 
   )
